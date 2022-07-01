@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập độ tuổi của em trai</h1>
+<input  id = 'em'type="text">
+<button onclick="anVao()">ấn vào để tìm tuổi bố và anh trai</button>
+<script>
+ function anVao() {
+     let tuoiEm = document.getElementById('em').value;
+     let tuoiAnh = +tuoiEm + 3;
+     let tuoiBo = tuoiAnh * 6;
+     document.write('tuổi của Anh trai là :'+ tuoiAnh);
+     document.write('tuổi của Bố là :'+ tuoiBo)
+ }
+</script>
+
+</body>
+</html>
